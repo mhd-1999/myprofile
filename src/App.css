@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --font:'Poppins', sans-serif;
+}
+html {
+  font: 62.5%; 
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  appearance: none;
+}
+ul{
+  line-height: 2.3;
+}
+ul li {
+  display: inline-block;
+  padding: 0 20px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul li a{
+  text-decoration: none;
   color: white;
+  font-family: var(--font);
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
+.header{
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  overflow: hidden;
+}
+.header-logo a{
+  font-family: var(--font);
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.active a{
+  animation: blur 2s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 
-@keyframes App-logo-spin {
+@keyframes blur{
   from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
   }
 }
+.header-menu{
+  float: right;
+}
+
+
+
+.d-flex{
+  display: flex;
+}
+

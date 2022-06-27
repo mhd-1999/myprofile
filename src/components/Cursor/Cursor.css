@@ -1,0 +1,19 @@
+.inner-cursor{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+  }
+  .inner-cursor.grow{
+    width: 100px;
+    height: 100px;
+    transition: width 0.5s, height 0.5s;
+  }
+
