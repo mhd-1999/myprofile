@@ -16,49 +16,12 @@ html {
 }
 
 body {
-  position: relative;
+
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   appearance: none;
-}
-ul{
-  line-height: 2.3;
-}
-ul li {
-  display: inline-block;
-  padding: 0 20px;
-  
-}
-
-ul li a{
-  text-decoration: none;
-  color: white;
-  font-family: var(--font);
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 400;
-}
-header{
-  position: fixed;
-  width: 100%;
-  top: 0;
   background-color: black;
-}
-.header{
-  justify-content: space-between;
-  padding: 0 70px;
-  height: 70px;
-  line-height: 70px;
-  width: 100%;
-  overflow: hidden;
-}
-.header-logo a{
-  font-family: var(--font);
-  font-size: 1.9rem;
-  font-weight: 800;
-  letter-spacing: 4px;
-  color: #fff;
 }
 
 .active a{
@@ -78,13 +41,15 @@ header{
       0px -10px 100px #7B96B8;
   }
 }
-.header-menu{
-  float: right;
+
+
+#card{
+  box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+  width: 100% !important;
 }
-
-
-
 .d-flex{
   display: flex;
 }
+
+
 

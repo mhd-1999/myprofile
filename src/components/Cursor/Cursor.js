@@ -9,6 +9,7 @@ function Cursor() {
     // let innerCursor = document.querySelector(".inner-cursor")
     let links = Array.from(document.querySelectorAll("a"))
     let texts = Array.from(document.querySelectorAll("p"))
+    let imgs = Array.from(document.querySelectorAll("img"))
     links.forEach((link) => {
         link.addEventListener("mouseenter", () => {
             innerRef.current.classList.add("grow");
@@ -22,6 +23,14 @@ function Cursor() {
             innerRef.current.classList.add("grow");
         });
         text.addEventListener("mouseleave", () => {
+            innerRef.current.classList.remove("grow");
+        })
+    })
+    imgs.forEach((img) => {
+        img.addEventListener("mouseenter", () => {
+            innerRef.current.classList.add("grow");
+        });
+        img.addEventListener("mouseleave", () => {
             innerRef.current.classList.remove("grow");
         })
     })

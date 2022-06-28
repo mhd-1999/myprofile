@@ -1,10 +1,6 @@
-import { useContext, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
 import Tilt from 'react-vanilla-tilt';
-import Main from '../Main';
-import Banner from '../Banner';
-import { CursorContext } from '../../context/cursor-context';
-import Cursor from '../Cursor/Cursor';
+import './Header.css'
 const links = [
     {
         id: 1,
@@ -29,7 +25,7 @@ const links = [
 ];
 function Header() {
     const [active, setActive] = useState();
-    const { cursorType, cursorChangeHandler } = useContext(CursorContext);
+
     return <div>
         <header id="header">
             <div className="header d-flex">
