@@ -1,47 +1,50 @@
-import './Project.css';
+import clsx from 'clsx';
+import styles from './Project.module.css';
 const projects = [
     {
         id: 1,
         name: 'Binz Store',
-        url: '',
+        url: 'https://binz-store.vercel.app/',
         img: 'https://cdn-vincart.vinid.net/cep/spacespeaker/binz_banner_1440.jpg',
     },
     {
         id: 2,
-        name: 'CollingWood',
-        url: '',
-        img: 'https://media-exp1.licdn.com/dms/image/C4E22AQFHP_bB1U29LA/feedshare-shrink_2048_1536/0/1649862359092?e=2147483647&v=beta&t=1IxONXY5npWSxtx57ScPEZjF1R_65oUZFmqGCZ7vcss',
+        name: 'Foodie',
+        url: 'https://foodie-kohl.vercel.app/',
+        img: 'https://img.freepik.com/free-photo/figs-spices-with-cup-drink-blue_114579-29075.jpg?t=st=1656751884~exp=1656752484~hmac=795661707cdc6f427aeab5dec1ca59cdee94c76e41bb58b9e5dd6ebcb7f9571f&w=1380',
     },
     {
         id: 3,
-        name: 'Art Store',
-        url: '',
-        img: 'https://wallpaperaccess.com/full/7871566.png',
+        name: 'CollingWood',
+        url: 'https://firstproject-github-io.vercel.app/#!/',
+        img: 'https://www.eda.org.uk/wp-content/uploads/2018/09/a4c6f331248a34ff9acedbe8bd6ec589.jpg',
     },
     {
         id: 4,
-        name: 'Chat real time',
-        url: '',
-        img: 'https://cdn.nguyenkimmall.com/images/detailed/793/dang-nha-zalo-web-thumb.jpg',
+        name: 'Art Store',
+        url: 'https://github.com/mhd-1999/ArtStore',
+        img: 'https://wallpaperaccess.com/full/7871566.png',
     },
 ];
 function Project() {
     return (
-        <div className="project">
-            <div className="title">
+        <div className={clsx(styles.project)}>
+            <div className={clsx(styles.title)}>
                 <p>project</p>
             </div>
-            <div className="group">
+            <div className={clsx(styles.group)}>
                 {projects.map((project) => (
-                    <div className="group-item" key={project.id}>
-                        <div className="item-text">
-                            <p>{project.name}</p>
+                    <div className={clsx(styles.groupItem, `item${project.id}`)} key={project.id}>
+                        <div className={clsx(styles.overlay)}></div>
+                        <div className={clsx(styles.itemText)}>
+                            <a href={project.url}><p>{project.name}</p></a>
                         </div>
-                        <div className="item-img">
+                        <div className={clsx(styles.itemImg)}>
                             <a href={project.url}>
                                 <img src={project.img} alt="" />
                             </a>
                         </div>
+
                     </div>
                 ))}
             </div>

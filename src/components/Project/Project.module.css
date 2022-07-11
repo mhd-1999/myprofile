@@ -1,0 +1,76 @@
+.project{
+    background-color: black;
+    padding: 150px 70px 150px 70px;
+}
+
+.project .title p{
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+}
+
+.itemText p{
+    color: white;
+}
+
+.group{
+    overflow: hidden;
+}
+.groupItem{
+    margin: 150px 0;
+}
+.groupItem:nth-child(odd){
+    float: left;
+    width: 60%;
+    position: relative;
+}
+
+.groupItem:nth-child(even){
+    float: right;
+    width: 60%;
+    position: relative;
+}
+
+.itemImg{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+.itemText{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+}
+.itemText p{
+    font-size: 40px;
+    font-style: var(--font);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: black;
+}
+.groupItem:hover .itemText{
+    top: 50%;
+    opacity: 1 !important;
+    transition: all 0.4s ease-in-out 0s;
+}
+.groupItem:hover .overlay{
+    opacity: 1 !important;
+    transition: all 1s ease-in-out 0s;
+}

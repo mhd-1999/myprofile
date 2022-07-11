@@ -1,7 +1,8 @@
+import './Cursor.css';
 import { useContext, useRef } from "react";
 import { CursorContext } from "../../context/cursor-context"
 import useCursorPosition from "../../hooks/useCursorPosition";
-import './Cursor.css'
+
 function Cursor() {
     const { cursorType, cursorChangeHandler } = useContext(CursorContext);
     const { x, y } = useCursorPosition();

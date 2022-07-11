@@ -2,7 +2,7 @@
     width: 100vw;
     top: 1000px;
     padding: 70px 70px 0 70px;
-    background-color: white;
+    background-color: black;
     height: 100vh;
     text-align: left;
 }
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: 10px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ padding: 100px 50px;
 }
 
 .content{
-    color: black;
+    color: white;
     padding: 100px 0;
     width: 50%;
 }

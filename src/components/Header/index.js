@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Tilt from 'react-vanilla-tilt';
-import './Header.css'
+import styles from './Header.module.css';
+import clsx from 'clsx';
 const links = [
     {
         id: 1,
@@ -28,16 +29,16 @@ function Header() {
 
     return <div>
         <header id="header">
-            <div className="header d-flex">
+            <div className={clsx(styles.header, 'd-flex')} >
 
-                <div className="header-logo">
+                <div className={clsx(styles.headerLogo)}>
                     <a>
                         <Tilt data-tilt data-tilt-scale="10" data-tilt-reset="false" style={{
                             with: "100%",
                         }}> SNIIM</Tilt>
                     </a>
                 </div>
-                <div className="header-menu">
+                <div className={clsx(styles.headerMenu)}>
                     <ul>
                         {links.map((link) => (
                             <li
