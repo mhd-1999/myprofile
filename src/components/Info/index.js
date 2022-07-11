@@ -4,7 +4,7 @@ import styles from './Info.module.css';
 import image from './mypic.jpg';
 function Info() {
     return (
-        <div className={clsx(styles.info)}>
+        <section className={clsx(styles.info)} id='About'>
             <div className={clsx(styles.title)}>
                 <p>About of me</p>
             </div>
@@ -35,7 +35,7 @@ function Info() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

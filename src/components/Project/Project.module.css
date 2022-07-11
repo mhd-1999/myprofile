@@ -11,7 +11,37 @@
     color: white;
     text-align: center;
 }
+.project .title:before{
+    content: '';
+    margin-top: 70px !important;
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%);
+    animation: title 2s infinite ;
+}
 
+@keyframes title{
+    0%{
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    50%{
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    51%{
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
 .itemText p{
     color: white;
 }

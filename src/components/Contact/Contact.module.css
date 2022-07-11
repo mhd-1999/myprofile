@@ -1,0 +1,117 @@
+.contact .title p{
+    width: 100%;
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+}
+.contact .title:before{
+    content: '';
+    margin-top: 70px !important;
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%);
+    animation: title 2s infinite ;
+}
+
+@keyframes title{
+    0%{
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    50%{
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    51%{
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+.contactBox{
+    justify-content: center;
+    padding: 150px 100px;
+}
+.form{
+    justify-content: center;
+    flex-wrap: wrap;
+    --height:410px;
+    height: var(--height);
+    width: 100%;
+    flex: 50%;
+}
+.form input{
+    flex: 40%;
+    border: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #333333;
+    color: white;
+    border-left: 3px solid grey;
+    transition: all 1s ease;
+}
+.form input:placeholder-shown{
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+.form input:focus{
+    outline: none;
+    background-color: rgb(25, 24, 24);
+    color: white;   
+}
+.form textarea{
+    flex: 100%;
+    border: none;
+    margin-right: 30px;
+    padding: 100px 15px;
+    background-color: #333333;
+    color: white;
+    border-left: 3px solid grey;
+    resize: none;
+    transition: all 1s ease;
+}
+.form textarea::-webkit-scrollbar{
+    display: none;
+}
+.form textarea:focus{
+    outline: none;
+    background-color: rgb(25, 24, 24);
+    color: white;
+}
+.form textarea:placeholder-shown{
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+.form button{
+    border: none;
+    flex: 100%;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-size: 17px;
+    letter-spacing: 3px;
+    transition: all 1s ease-in-out;
+}
+.form button:hover{
+    background-color: #333333;
+    color: white;
+}
+.map{
+    height: 100%;
+    flex: 50%;
+    padding-left: 30px;
+}

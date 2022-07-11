@@ -2,28 +2,28 @@ import { useState } from 'react';
 import Tilt from 'react-vanilla-tilt';
 import styles from './Header.module.css';
 import clsx from 'clsx';
-const links = [
-    {
-        id: 1,
-        class: 'nav-link home',
-        name: 'Home',
-    },
-    {
-        id: 2,
-        class: 'nav-link about',
-        name: 'About',
-    },
-    {
-        id: 3,
-        class: 'nav-link portfolio',
-        name: 'Portfolio',
-    },
-    {
-        id: 4,
-        class: 'nav-link contact',
-        name: 'Contact',
-    },
-];
+// const links = [
+//     {
+//         id: 1,
+//         class: 'nav-link home',
+//         name: 'Home',
+//     },
+//     {
+//         id: 2,
+//         class: 'nav-link about',
+//         name: 'About',
+//     },
+//     {
+//         id: 3,
+//         class: 'nav-link portfolio',
+//         name: 'Portfolio',
+//     },
+//     {
+//         id: 4,
+//         class: 'nav-link contact',
+//         name: 'Contact',
+//     },
+// ];
 function Header() {
     const [active, setActive] = useState();
 
@@ -38,18 +38,18 @@ function Header() {
                         }}> SNIIM</Tilt>
                     </a>
                 </div>
-                <div className={clsx(styles.headerMenu)}>
+                {/* <div className={clsx(styles.headerMenu)}>
                     <ul>
                         {links.map((link) => (
                             <li
                                 onClick={() => setActive(link.id)}
                                 className={active == link.id ? `active ${link.class}` : `${link.class}`}
                             >
-                                <a>{link.name}</a>
+                                <a href={`#${link.name}`}>{link.name}</a>
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
             </div>
         </header>
     </div>;

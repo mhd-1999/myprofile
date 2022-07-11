@@ -1,6 +1,6 @@
 import './App.css';
-import Banner from './components/Banner';
 import Cursor from './components/Cursor/Cursor';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
 
@@ -9,6 +9,7 @@ function App() {
         <div className="App">
             <Header />
             <Main />
+            <Footer />
             <Cursor />
         </div>
     );

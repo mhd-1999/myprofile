@@ -28,7 +28,7 @@ const projects = [
 ];
 function Project() {
     return (
-        <div className={clsx(styles.project)}>
+        <section className={clsx(styles.project)} id="Portfolio">
             <div className={clsx(styles.title)}>
                 <p>project</p>
             </div>
@@ -48,7 +48,7 @@ function Project() {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

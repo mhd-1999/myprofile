@@ -1,0 +1,29 @@
+footer{
+    color: #333333;
+    padding: 30px 100px;
+    justify-content: space-between;
+}
+.text{
+    flex: 50%;
+}
+.text p{
+    font-size: 17px;
+    font-family: var(--font);
+}
+.text p:hover{
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.icon{
+    flex: 50%;
+    justify-content: flex-end;
+}
+.icon i{
+    padding-left: 30px;
+    font-size: 17px;
+    color: #333333;
+    transition: all .3s ease;
+}
+.icon i:hover{
+    color: white;
+}
