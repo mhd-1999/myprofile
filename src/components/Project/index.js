@@ -1,29 +1,33 @@
 import clsx from 'clsx';
 import styles from './Project.module.css';
+import binz from './img/binzStore.png';
+import foodie from './img/foodie.png';
+import coolingwood from './img/coolingwood.png';
+import artstore from './img/artStore.png'
 const projects = [
     {
         id: 1,
         name: 'Binz Store',
         url: 'https://binz-store.vercel.app/',
-        img: 'https://cdn-vincart.vinid.net/cep/spacespeaker/binz_banner_1440.jpg',
+        img: binz
     },
     {
         id: 2,
         name: 'Foodie',
         url: 'https://foodie-kohl.vercel.app/',
-        img: 'https://img.freepik.com/free-photo/figs-spices-with-cup-drink-blue_114579-29075.jpg?t=st=1656751884~exp=1656752484~hmac=795661707cdc6f427aeab5dec1ca59cdee94c76e41bb58b9e5dd6ebcb7f9571f&w=1380',
+        img: foodie
     },
     {
         id: 3,
         name: 'CollingWood',
         url: 'https://firstproject-github-io.vercel.app/#!/',
-        img: 'https://www.eda.org.uk/wp-content/uploads/2018/09/a4c6f331248a34ff9acedbe8bd6ec589.jpg',
+        img: coolingwood
     },
     {
         id: 4,
         name: 'Art Store',
         url: 'https://github.com/mhd-1999/ArtStore',
-        img: 'https://wallpaperaccess.com/full/7871566.png',
+        img: artstore
     },
 ];
 function Project() {

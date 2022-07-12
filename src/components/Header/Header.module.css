@@ -36,6 +36,19 @@
     letter-spacing: 4px;
     color: #fff;
   }
+  .icon{
+    flex: 50%;
+    justify-content: flex-end;
+  }
+  .icon i{
+    padding-left: 20px;
+    font-size: 17px;
+    color: #333333;
+    transition: all .3s ease;
+  }
+  .icon i:hover{
+    color: white;
+  }
   @media screen and (max-width:425px) {
     .header{
       justify-content: center;
@@ -43,5 +56,8 @@
     }
     .headerLogo a{
       font-size: 16px;
+    }
+    .icon{
+      display: none;
     }
   }

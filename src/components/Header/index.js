@@ -38,18 +38,11 @@ function Header() {
                         }}> SNIIM</Tilt>
                     </a>
                 </div>
-                {/* <div className={clsx(styles.headerMenu)}>
-                    <ul>
-                        {links.map((link) => (
-                            <li
-                                onClick={() => setActive(link.id)}
-                                className={active == link.id ? `active ${link.class}` : `${link.class}`}
-                            >
-                                <a href={`#${link.name}`}>{link.name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div> */}
+                <div className={clsx(styles.icon, 'd-flex')}>
+                    <a href="https://www.facebook.com/s.niim94/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/s.niim/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/mhd-1999"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </header>
     </div>;
