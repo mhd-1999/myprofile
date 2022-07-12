@@ -9,6 +9,7 @@ footer{
 .text p{
     font-size: 17px;
     font-family: var(--font);
+    line-height: 3;
 }
 .text p:hover{
     color: white;
