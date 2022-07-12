@@ -13,7 +13,7 @@ function Banner() {
         <a href='#'>
             <div className={clsx(styles.scrollDown)}>
                 <div className={clsx(styles.mouse)}>
-                    <a href="#about"><span></span></a>
+                    <a href="#About"><span></span></a>
                 </div>
                 {/* <div className={clsx(styles.arrow)}>
                     <span></span>
