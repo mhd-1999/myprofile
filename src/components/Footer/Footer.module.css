@@ -27,3 +27,19 @@ footer{
 .icon i:hover{
     color: white;
 }
+@media screen and (max-width:425px) {
+    footer{
+        padding: 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .text{
+        flex: 100%;
+    }
+    .icon{
+        flex: 100%;
+        justify-content: center;
+    }.icon i{
+        padding: 15px;
+    }
+}

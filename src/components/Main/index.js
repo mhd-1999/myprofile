@@ -21,7 +21,6 @@ function Main(props) {
         else if (offset >= 5200) {
             setActive('contact')
         }
-        console.log(active);
     })
     return <div className="main">
         <div className={clsx(styles.nav)}>

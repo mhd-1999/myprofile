@@ -104,3 +104,24 @@
     opacity: 1 !important;
     transition: all 1s ease-in-out 0s;
 }
+@media screen and (max-width:768px) {
+    .groupItem:nth-child(odd){
+        width: 100%;
+        float: unset;
+    }
+    .groupItem:nth-child(even){
+        width: 100%;
+        float: unset;
+    }
+    .groupItem{
+        margin: 150px 0 0 0 ;
+    }
+    .project .title p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:425px) {
+    .project{
+        padding: 150px 15px;
+    }
+}

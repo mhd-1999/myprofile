@@ -100,7 +100,39 @@ img{
     margin-right: 1rem;
     align-items: center;
 }
-
+@media screen and (max-width:768px) {
+    .box{
+        flex-wrap: wrap;
+    }
+    .box .img{
+        flex: 100%;
+        width: 100%;
+        float: unset;
+        padding: 100px 0;
+    }
+    .box .content{
+        flex:100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width:425px) {
+    .info{
+        padding: 15px;
+    }
+    .content .contentTop p{
+        font-size: 35px;
+    }
+    .content .contentMid p{
+        font-size: 17px;
+    }
+    .content .contentBottom p{
+        font-size: 12px;
+        line-height: 1;
+    }
+    .info .title p{
+        font-size: 16px;
+    }
+}
 
 
 
