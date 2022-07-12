@@ -10,10 +10,10 @@ function Banner() {
                 <p>And I really <span>love</span> it !</p>
             </div>
         </Tilt>
-        <a href='#'>
+        <a href='#About'>
             <div className={clsx(styles.scrollDown)}>
                 <div className={clsx(styles.mouse)}>
-                    <a href="#About"><span></span></a>
+                    <span></span>
                 </div>
                 {/* <div className={clsx(styles.arrow)}>
                     <span></span>
