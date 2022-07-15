@@ -56,7 +56,8 @@ a{
 
 #card{
   box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
-  width: 100% !important;
+  width: fit-content !important;
+  margin: 0 auto;
 }
 .d-flex{
   display: flex;
