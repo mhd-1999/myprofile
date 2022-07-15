@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import styles from './Info.module.css';
 import image from './mypic.jpg';
+import Tilt from 'react-vanilla-tilt';
 function Info() {
     return (
         <section className={clsx(styles.info)} id='About'>
@@ -10,7 +11,7 @@ function Info() {
             </div>
             <div className={clsx(styles.box, 'd-flex')}>
                 <div className={clsx(styles.img)}>
-                    <img src={image} alt="" />
+                    <Tilt id="card" style={{ padding: "unset" }}><img src={image} alt="" /></Tilt>
                 </div>
 
                 <div className={clsx(styles.content)}>
