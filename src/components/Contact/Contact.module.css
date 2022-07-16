@@ -105,6 +105,7 @@
     font-size: 17px;
     letter-spacing: 3px;
     transition: all 1s ease-in-out;
+    background-color: white;
 }
 .form button:hover{
     background-color: #333333;
@@ -114,6 +115,9 @@
     height: 100%;
     flex: 50%;
     padding-left: 30px;
+}
+.map iframe{
+    border: none;
 }
 @media screen and (max-width:768px) {
     .contactBox{

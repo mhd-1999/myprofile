@@ -4,9 +4,9 @@ import Info from "../Info";
 import Project from "../Project";
 import clsx from "clsx";
 import styles from './Main.module.css'
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { ReactDOM } from "react";
-function Main(props) {
+function Main() {
     const [active, setActive] = useState('');
 
     window.addEventListener('scroll', e => {

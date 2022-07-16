@@ -27,7 +27,7 @@ function Info() {
                     </div>
                     <div className={clsx(styles.contentBottom, 'd-flex')}>
                         <div className={clsx(styles.contentIcon, 'd-flex')}>
-                            <i class="fas fa-arrow-right"></i>
+                            <i className="fas fa-arrow-right"></i>
                         </div>
                         <div className={clsx(styles.contentInfo)}>
                             <p>maihaiduong2015@gmail.com</p>

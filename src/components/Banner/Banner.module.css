@@ -6,16 +6,27 @@
     background-color: black;
     width: 100%;
 }
-
-
-.thumbnailText span{
+.thumbnailText:hover span{
     text-shadow: rgb(238 29 82 / 80%) 4px -3px 0px, rgb(105 201 208 / 80%) -3px 5px 0px;
+    transition: all 1s linear ease-in-out;
 }
 
+/* .thumbnailText span{
+    text-shadow: rgb(238 29 82 / 80%) 4px -3px 0px, rgb(105 201 208 / 80%) -3px 5px 0px;
+} */
+.thumbnailText{
+    padding: 15px;
+}
 .thumbnailText p{
     font-size: calc(3.4vw + 3.4vh) ;
 }
-
+.thumbnailText p:nth-child(1){
+    animation: textS 1s ease;
+}
+.thumbnailText p:nth-child(2){
+    
+    animation: textD 1s ease;
+}
 .scrollDown{
     position: absolute;
     bottom: 2rem;
@@ -83,5 +94,25 @@
     75%{
         opacity:1;
 
+    }
+}
+@keyframes textD{
+    0%{
+        transform: translateY(-50%) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%) ;
+        opacity: 1;
+    }
+}
+@keyframes textS{
+    0%{
+        transform: translateY(50%) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%) ;
+        opacity: 1;
     }
 }

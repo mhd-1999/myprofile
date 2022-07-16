@@ -39,9 +39,9 @@ function Header() {
                     </a>
                 </div>
                 <div className={clsx(styles.icon, 'd-flex')}>
-                    <a href="https://www.facebook.com/s.niim94/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/s.niim/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/mhd-1999"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/s.niim94/"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/s.niim/"><i className="fab fa-instagram"></i></a>
+                    <a href="https://github.com/mhd-1999"><i className="fab fa-github"></i></a>
                 </div>
             </div>
         </header>

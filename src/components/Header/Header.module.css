@@ -20,6 +20,7 @@
     width: 100%;
     top: 0;
     background-color: black;
+    transition: all 1.2s ease-in-out ease;
   }
   .header{
     justify-content: space-between;
