@@ -1,22 +1,5 @@
-/* ul{
-    line-height: 2.3;
-  }
-  ul li {
-    display: inline-block;
-    padding: 0 20px;
-    
-  }
-  
-  ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: var(--font);
-    font-size: 0.8rem;
-    letter-spacing: 4px;
-    font-weight: 400;
-  } */
+
   header{
-    /* position: fixed; */
     width: 100%;
     top: 0;
     background-color: black;
@@ -49,6 +32,9 @@
   }
   .icon i:hover{
     color: white;
+  }
+  .tilt{
+    box-shadow: unset !important;
   }
   @media screen and (max-width:425px) {
     .header{

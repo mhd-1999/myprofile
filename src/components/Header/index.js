@@ -33,9 +33,7 @@ function Header() {
 
                 <div className={clsx(styles.headerLogo)}>
                     <a>
-                        <Tilt data-tilt data-tilt-scale="10" data-tilt-reset="false" style={{
-                            with: "100%",
-                        }}> SNIIM</Tilt>
+                        <Tilt className={clsx(styles.tilt)} data-tilt data-tilt-scale="10" data-tilt-reset="false" style={{ width: "100%" }}> SNIIM</Tilt>
                     </a>
                 </div>
                 <div className={clsx(styles.icon, 'd-flex')}>
