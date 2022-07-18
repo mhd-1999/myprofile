@@ -2,8 +2,8 @@
   header{
     width: 100%;
     top: 0;
-    background-color: black;
-    transition: all 1.2s ease-in-out ease;
+    animation: bg 3.8s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .header{
     justify-content: space-between;
@@ -24,17 +24,48 @@
     flex: 50%;
     justify-content: flex-end;
   }
-  .icon i{
+  .icon a{
     padding-left: 20px;
     font-size: 17px;
     color: #333333;
-    transition: all .3s ease;
+    animation: icon 3.8s ease-in-out;
+    transition: all .5s ease-in-out;
   }
-  .icon i:hover{
+  .icon a:hover{
     color: white;
+    transform: translateY(-5%);
+    bottom: 1px solid white;
   }
   .tilt{
     box-shadow: unset !important;
+  }
+  @keyframes bg{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: white;
+    }
+    75%{
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+  }
+  @keyframes icon{
+    0%{
+      color: white;
+    }
+    50%{
+      color: white;
+    }
+    75%{
+      color: white;
+    }
+    100%{
+      color:#333333;
+    }
   }
   @media screen and (max-width:425px) {
     .header{
