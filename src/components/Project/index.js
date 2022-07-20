@@ -21,7 +21,7 @@ const projects = [
     {
         id: 3,
         name: 'Colling',
-        url: 'https://firstproject-github-io.vercel.app/#!/',
+        url: 'https://collingwood.vercel.app/#!/',
         img: coolingwood
     },
     {
