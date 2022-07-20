@@ -1,11 +1,12 @@
 
 .thumbnail{
     text-align: center;
-    padding: 200px 0 200px 0;
+    padding: 150px 0 150px 0;
     height: 100vh;
     width: 100%;
     animation: bg 3.8s ease-in-out;
     transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 .thumbnailText:hover span{
     text-shadow: rgb(238 29 82 / 80%) 4px -3px 0px, rgb(105 201 208 / 80%) -3px 5px 0px;

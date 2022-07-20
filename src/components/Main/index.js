@@ -28,6 +28,7 @@ function Main() {
             <a onClick={() => setActive('port')} href="#Portfolio" className={clsx(styles.linkItem, active === 'port' ? styles.active : '')}></a>
             <a onClick={() => setActive('contact')} href="#Contact" className={clsx(styles.linkItem, active === 'contact' ? styles.active : '')}></a>
         </div>
+
         <Banner />
         <div id="content">
             <Info />

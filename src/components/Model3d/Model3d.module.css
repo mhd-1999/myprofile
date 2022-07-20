@@ -1,0 +1,137 @@
+
+.thumbnail{
+    text-align: center;
+    padding: 200px 0 200px 0;
+    height: 100vh;
+    width: 100%;
+    animation: bg 3.8s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.thumbnailText:hover span{
+    text-shadow: rgb(238 29 82 / 80%) 4px -3px 0px, rgb(105 201 208 / 80%) -3px 5px 0px;
+    transition: all 1s linear ease;
+}
+
+/* .thumbnailText span{
+    text-shadow: rgb(238 29 82 / 80%) 4px -3px 0px, rgb(105 201 208 / 80%) -3px 5px 0px;
+} */
+.thumbnailText{
+    padding: 15px;
+}
+.thumbnailText .line{
+    overflow: hidden;
+}
+.thumbnailText p{
+    font-size: calc(3.4vw + 3.4vh) ;
+}
+.thumbnailText .line:nth-child(1) p{
+    animation: textD 1.8s ease-in-out;
+}
+.thumbnailText .line:nth-child(2) p{  
+    animation: textD 2.8s ease-in-out;
+}
+.scrollDown{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse{
+    width: 1.5rem;
+    height: 3rem;
+    border: 2px solid #ffff;
+    border-radius: 36px;
+    display: flex;
+}
+.mouse span{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ffff;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: mousekey 1s linear infinite;
+}
+.arrow span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 2px solid transparent;
+    border-right-color: #ffff;
+    border-bottom-color: #ffff;
+    
+    animation: arrowkey 0.5s alternate infinite;
+    transform: rotate(45deg);
+}
+@keyframes mousekey{
+    0%{
+        opacity:0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes arrowkey{
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0.25;
+ 
+    }
+    50%{
+        opacity:0.5;
+
+    }
+    75%{
+        opacity:0.75;
+
+    }
+    75%{
+        opacity:1;
+
+    }
+}
+@keyframes textD{
+    0%{
+        transform:translateY(150%) ;
+    }
+    100%{
+        transform:  translateY(0%) ;
+    }
+}
+/* @keyframes textS{
+    0%{
+        transform:skewY(-15deg) translateY(150%) ;
+        opacity: 0;
+    }
+    100%{
+        transform:skewY(0deg) translateY(0%) ;
+        opacity: 1;
+    }
+} */
+@keyframes bg{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    50%{
+        background-color: white;
+        color: black;
+    }
+    75%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: black;
+        color: white;
+    }
+}
