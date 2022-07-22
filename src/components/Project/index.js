@@ -21,7 +21,7 @@ const projects = [
     {
         id: 3,
         name: 'Colling',
-        url: 'https://collingwood.vercel.app/#!/',
+        url: 'https://coolingwood.vercel.app/',
         img: coolingwood
     },
     {
